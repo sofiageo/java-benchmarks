@@ -13,6 +13,11 @@ Last update: **2018-07-07**
 
 |Benchmark|Score|Units|
 |---------|-----|-----|
-|HashBenchmark.CRC32Bench|45614305.785|ops/s
-|HashBenchmark.CRC32CBench|68176659.415|ops/s
-|HashBenchmark.xxHashBench|67721462.200|ops/s
+HashBenchmark.CRC32CBench|3687611.726|ops/s
+HashBenchmark.xxHashZeroBench|1394913.160|ops/s
+HashBenchmark.xxHash64Bench|935442.969|ops/s
+HashBenchmark.CRC32Bench|501530.592|ops/s
+HashBenchmark.murmur3Bench|511385.676|ops/s
+HashBenchmark.xxHash32Bench|299190.778|ops/s
+HashBenchmark.sha1Bench|33703.050|ops/s
+

@@ -94,5 +94,26 @@
             <version>0.8</version>
         </dependency>
 
+        <!-- Bouncy castle -->
+        <!--<dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.55</version>
+        </dependency>-->
+
+        <!-- Apache commons -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
+        </dependency>
+
+        <!-- LZ4 and xxHash -->
+        <dependency>
+            <groupId>org.lz4</groupId>
+            <artifactId>lz4-java</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+
     </dependencies>
 </project>
