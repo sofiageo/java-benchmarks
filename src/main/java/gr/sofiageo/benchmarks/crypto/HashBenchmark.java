@@ -82,4 +82,18 @@ public class HashBenchmark {
         hash.hashBytes(state.bytes);
     }
 
+    @Benchmark
+    public void highwayhash64(LocalState state) {
+        long[] key = {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+                0x1716151413121110L, 0x1F1E1D1C1B1A1918L};
+        HighwayHash.hash64(state.bytes, 0, state.bytes.length, key);
+    }
+
+    @Benchmark
+    public void highwayhash256(LocalState state) {
+        long[] key = {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+                0x1716151413121110L, 0x1F1E1D1C1B1A1918L};
+        HighwayHash.hash256(state.bytes, 0, state.bytes.length, key);
+    }
+
 }

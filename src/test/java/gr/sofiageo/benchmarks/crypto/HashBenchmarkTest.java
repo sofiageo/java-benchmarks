@@ -54,4 +54,14 @@ public class HashBenchmarkTest {
         LongHashFunction hassh = LongHashFunction.xx(seed);
         System.out.println(hassh.hashBytes(bytes));
     }
+
+    @Test
+    public void highwayhashTest() {
+        long[] key = {0x0706050403020100L, 0x0F0E0D0C0B0A0908L,
+                0x1716151413121110L, 0x1F1E1D1C1B1A1918L};
+        long[] result = HighwayHash.hash256(bytes, 0, bytes.length, key);
+        for (long r : result)
+        System.out.println(r);
+
+    }
 }
